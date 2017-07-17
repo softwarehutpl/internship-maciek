@@ -29,6 +29,11 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    &__item{
+        a{
+            color:red;
+        }
+    }
 
 
 }

@@ -30,18 +30,11 @@ module.exports = function (env) {
           use: ['css-loader','autoprefixer-loader'],
         })
       }, 
-      // {
-      //   test: /\.less$/,
-      //   use: ExtractTextPlugin.extract({
-      //     fallback: 'style-loader',
-      //     use: ['css-loader', 'less-loader'],
-      //   })
-      // },
        {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'autoprefixer-loader', 'less-loader'],
+          use: ['css-loader', 'autoprefixer-loader', 'sass-loader'],
         })
       }, 
       {

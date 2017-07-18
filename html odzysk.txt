@@ -1,0 +1,113 @@
+<body>
+    <div class="main-container">
+        <header>
+            <div class="main-hdr">
+                <div class="main-hdr__top">
+                    <div class="logo">
+                        <img src="/assets/images/c3a7df7a92753238f30eb1de0c522c08.png">
+                    </div>
+                    <div class="hamburger-menu open"><span></span></div>
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav__item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Archives</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Contact</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="promo_box">
+                    <div class="promo_box__text">
+                    </div>
+                    <div class="promo_box__image"></div>
+                </div>
+            </div>
+        </header>
+        <section class="about">
+            <div class="about__item"></div>
+            <div class="about__item"></div>
+            <div class="about__item"></div>
+            <div class="about__item"></div>
+        </section>
+        <section class="work">
+            <div class="work__text">
+                <h1>Tralalala</h1>
+                <p>Olaboga szakalaka</p>
+            </div>
+            <div class="work__images">
+                <div class="work__images__img">
+                    <img src="/assets/images/3002368c6558d6fcc1ca47546a0898fe.png">
+                </div>
+                <div class="work__images__img">
+                    <img src="/assets/images/5a4351f68dd4f8e37a1272ba80f0d3bb.png">
+                </div>
+                <div class="work__images__img">
+                    <img src="/assets/images/767b08bc05e3d46069ccfbb25abaa4d5.png">
+                </div>
+                <div class="work__images__img">
+                    <img src="/assets/images/5a4351f68dd4f8e37a1272ba80f0d3bb.png">
+                </div>
+                <div class="work__images__img">
+                    <img src="/assets/images/767b08bc05e3d46069ccfbb25abaa4d5.png">
+                </div>
+                <div class="work__images__img">
+                    <img src="/assets/images/3002368c6558d6fcc1ca47546a0898fe.png">
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="footer__infoBox">
+                <div class="footer__infoBox__item"></div>
+                <div class="footer__infoBox__item"></div>
+                <div class="footer__infoBox__item"></div>
+                <div class="footer__infoBox__item"></div>
+            </div>
+            <div class="footer__copyrights">
+                <div class="footer__copyrights__logo">
+                    <img src="/assets/images/c3a7df7a92753238f30eb1de0c522c08.png">
+                </div>
+                <div class="footer__copyrights__text">
+                    <p>Uuuuuu szakalakalkalkal</p>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+    <!--<div class="hello">
+        <p>Hello praktyki!</p>
+        <p class="smaller">Przykład użycia assetu z index.html:</p>
+        <img src="/assets/images/bc346ad228dd52afd487005ecaf9364a.svg" />
+        <p class="smaller">Przykład użycia assetu z pliku scss:</p>
+        <div class="asset-test">
+            
+        </div>
+    </div>-->
+
+<script type="text/javascript" src="/app.bundle.js"></script>
+
+</body>

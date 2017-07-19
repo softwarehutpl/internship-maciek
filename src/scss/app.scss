@@ -29,15 +29,21 @@ a {
 
 .main-hdr{
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 120px;
+  flex-flow: column wrap;
+  // align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+  position: relative;
 
   &__nav{
+    order:1;
+    flex: 1 100%;
+    align-content: center;
     ul{
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: column wrap;
+      justify-content: center;
+      
     }
 
     &__item{
@@ -292,9 +298,10 @@ form{
   input{
     border-radius: 25px;
     height: 26px;
-    background-color: #393838;
+    width: 150px;
+    background-color: #2e2e2e;
     border: none;
-    box-shadow: inset 2px 2px 0px #313131;
+    box-shadow: inset 2px 2px 9px #212121;
     background-image: url('~assets/loupe.svg');
     background-repeat: no-repeat;
     background-size: 13px;

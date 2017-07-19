@@ -31,23 +31,33 @@ a {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 120px;
-
-  // &__logo{
-  //   padding: 10px;
-  // }
+  padding: 10px 120px;
 
   &__nav{
     ul{
       display: flex;
       flex-flow: row nowrap;
     }
+
     &__item{
-      margin: 10px;
+      border-right:solid 1px white;
+      padding: 0px 10px;
+      // margin: 10px;
+      a{
+        padding: 10px;
+        &:hover{
+        background-color: #2e2e2e;
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 3px #292828 ;
+
+      }
+      // &:hover{
+      //   background-color: black;
+      // }
     }
   }
 }
-
+}
 
 
 // /** main header**/
@@ -159,7 +169,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 120px;
 }
 .promo_box__text {
   width: 400px;

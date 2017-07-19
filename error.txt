@@ -1,0 +1,10 @@
+ERROR in ./node_modules/css-loader!./node_modules/autoprefixer-loader!./node_modules/sass-loader/lib/loader.js!./src/scs
+s/app.scss
+Module build failed: Error: A valid query string passed to parseQuery should begin with '?'
+    at Object.parseQuery (F:\praca\strony internetowe\internship-maciek\node_modules\loader-utils\lib\parseQuery.js:13:9
+)
+    at Object.module.exports (F:\praca\strony internetowe\internship-maciek\node_modules\autoprefixer-loader\index.js:12
+:30)
+ @ ./src/scss/app.scss 4:14-169 18:2-22:4 19:20-175
+ @ ./src/app.js
+ @ multi (webpack)-dev-server/client?http://localhost:8080 webpack/hot/dev-server ./src/app.js

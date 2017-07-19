@@ -7,6 +7,7 @@ body {
   font-family: Lato, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 ul,
 li {
@@ -30,39 +31,132 @@ a {
 .main-hdr{
   display: flex;
   flex-flow: column wrap;
-  // align-items: center;
+  align-items: center;
   justify-content: space-around;
   padding: 20px 10px;
   position: relative;
+  @media (min-width: 715px){
+    flex-flow: row wrap;
+    padding: 20px 120px;
+    justify-content: space-between;
+
+  }
+  @media (min-width:1200px){
+    flex-flow: row nowrap;
+  }
+
+  &__logo{
+    align-self: flex-start;
+
+  }
+/********* hamburger menu **********/
+  &__hamburger-menu{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:10px;
+    right:10px;
+    @media (min-width: 715px){
+      display: none;
+    }
+
+    span{
+      display: block;
+      width: 40px;
+      height: 8px;
+      top:20px;
+      left: 5px;
+      background: white;
+      border-radius: 5px;
+      position: absolute;
+      transition: all 0.5s ease;
+
+      &::before, &::after{
+          content: "";
+          display: block;
+          width: 40px;
+          height: 8px;
+          background-color: white;
+          position: absolute;
+          border-radius: 5px;
+      }
+      &::before{
+        top: 15px;
+      }
+      &::after{
+        top: -15px;
+      }
+    }
+      &.open{
+        &+ .main-hdr__nav{
+          display: none;
+        }
+    span{
+      transform: rotate(45deg);
+      &::before{
+        opacity:0;
+      }
+      &::after{
+        top:0px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  }
 
   &__nav{
+        
     order:1;
-    flex: 1 100%;
-    align-content: center;
+    width: 100%;
+    text-align: center;
     ul{
+      padding: 0;
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
+      @media (min-width: 715px){
+        flex-flow: row nowrap;
+      }
       
     }
 
     &__item{
-      border-right:solid 1px #49494c;
       padding: 0px 10px;
+      @media (min-width: 715px){
+        border-right:solid 1px #49494c;
+      }
+
       a{
         padding: 10px;
+        line-height: 2.5em;
         &:hover{
         background-color: #2e2e2e;
         border-radius: 5px;
         box-shadow: inset 1px 1px 3px #292828 ;
 
+        }
       }
-      // &:hover{
-      //   background-color: black;
-      // }
     }
   }
-}
+/********** search bar ****/
+  &__form{
+    padding: 10px;
+    input{
+          border-radius: 25px;
+          height: 26px;
+          width: 150px;
+          background-color: #2e2e2e;
+          border: none;
+          box-shadow: inset 2px 2px 9px #212121;
+          background-image: url('~assets/loupe.svg');
+          background-repeat: no-repeat;
+          background-size: 13px;
+          background-position:5% 50%;
+          outline: none;
+          color: white;
+          text-indent: 25px;
+          }
+    }
 }
 
 
@@ -292,22 +386,4 @@ a {
 }
 .footer__copyrights__text {
   padding-left: 50px;
-}
-/************* searchbar *******/
-form{
-  input{
-    border-radius: 25px;
-    height: 26px;
-    width: 150px;
-    background-color: #2e2e2e;
-    border: none;
-    box-shadow: inset 2px 2px 9px #212121;
-    background-image: url('~assets/loupe.svg');
-    background-repeat: no-repeat;
-    background-size: 13px;
-    background-position:5% 50%;
-    outline: none;
-    color: white;
-    text-indent: 25px;
-  }
 }

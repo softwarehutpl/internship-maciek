@@ -6,6 +6,7 @@
 body {
   font-family: Lato, Arial, Helvetica, sans-serif;
   margin: 0;
+  padding: 0;
 }
 ul,
 li {
@@ -40,9 +41,8 @@ a {
     }
 
     &__item{
-      border-right:solid 1px white;
+      border-right:solid 1px #49494c;
       padding: 0px 10px;
-      // margin: 10px;
       a{
         padding: 10px;
         &:hover{

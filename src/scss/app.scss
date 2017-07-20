@@ -385,6 +385,67 @@ a {
       width: 300px;
       height: 274px;
       margin:11px 0;
+      position: relative;
+
+      &:hover .work__items__image__cover{
+        opacity: 1;
+      }
+
+
+
+      img{
+        width:100%;
+        height: 100%;
+        position: absolute;
+        opacity: 1;
+      }
+
+
+      &__cover{
+        position: absolute;
+        opacity: 0;
+        background: rgba(0,0,0,0.66);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+
+
+
+        &__img{
+          width:73px;
+          height: 73px;
+          background: gray;
+          border-radius: 10px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          img{
+            width:60%;
+            height: 60%;
+            position: absolute;
+            top:25%;
+            left: 25%;
+            transform: translate(-10%, -6%);
+          }
+        }
+
+        &__text{
+          color: white;
+          display: flex;
+          flex-flow: row nowrap;
+          // justify-content: space-around;
+          align-items:flex-end;
+
+          p{
+            padding: 10px;
+          }
+        }
+      }
 
       @media(min-width:715px){
         width: 220px;

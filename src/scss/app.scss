@@ -327,7 +327,7 @@ a {
 .work{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   &__header{
     display: flex;
@@ -359,12 +359,50 @@ a {
   @media (min-width:715px){
     padding: 0 120px;
   }
+  
 
-
-  &__images{
+  &__items{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    @media (min-width:715px){
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+
+    &__text{
+      width: 300px;
+      padding: 0 0 28px;
+
+      @media(min-width:715px){
+        width: 220px;
+        height: 200px;
+
+      }
+
+    }
+    &__image{
+      width: 300px;
+      height: 274px;
+      margin:11px 0;
+
+      @media(min-width:715px){
+        width: 220px;
+        height: 200px;
+        margin-left: 10px;
+      }
+    }
+    &__empty{
+      width:220px;
+      height: 200px;
+      display: none;
+
+      @media(min-width:1200px){
+        display: block;
+      }
+    }
   }
+
 }
 
 
@@ -427,6 +465,7 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0 120px;
+  margin-top: 20px;
 }
 .footer__infoBox__item {
   margin: 10px 0;

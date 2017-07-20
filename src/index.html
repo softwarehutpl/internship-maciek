@@ -1,54 +1,108 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FrontendHut</title>
 </head>
 
 <body>
     <div class="main-container">
-        <header>
+        <header class="background">
             <div class="main-hdr">
-                <div class="main-hdr__top">
-                    <div class="logo">
-                        <img src="/assets/images/c3a7df7a92753238f30eb1de0c522c08.png">
-                    </div>
-                    <div class="hamburger-menu open"><span></span></div>
-                    <nav class="nav">
-                        <ul>
-                            <li class="nav__item">
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">About</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">Blog</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">Archives</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#">Contact</a>
-                            </li>
+                <div class="main-hdr__logo">
+                    <img src="${require(`assets/logo.png`)}" alt="logo" />
+                </div>
+                <div class="main-hdr__hamburger-menu"><span></span></div>
+                <nav class="main-hdr__nav">
+                    <ul>
+                        <li class="main-hdr__nav__item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="main-hdr__nav__item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="main-hdr__nav__item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="main-hdr__nav__item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="main-hdr__nav__item">
+                            <a href="#">Archives</a>
+                        </li>
+                        <li class="main-hdr__nav__item">
+                            <a href="#">Contact</a>
+                        </li>
 
-                        </ul>
-                    </nav>
+                    </ul>
+                </nav>
+                <form class="main-hdr__form">
+                    <input type="text" placeholder="" name="search" />
+                </form>
+            </div>
+            <div class="promo_box">
+                <div class="promo_box__text">
+                    <h1> Portfolio Website Theme: Perfect for Anyone</h1>
+                    <p>Quis commodo proident sint dolor. Tempor laboris quis laboris culpa officia cupidatat. Fugiat sint Lorem
+                        ipsum exercitation tempor aute.Fugiat sint Lorem ipsum exercitation tempor aute</p>
+                    <p>Est pariatur ex ipsum incididunt consequat nisi dolore ut nostrud non occaecat commodo ut excepteur.</p>
+
                 </div>
-                <div class="promo_box">
-                    <div class="promo_box__text">
-                    </div>
-                    <div class="promo_box__image"></div>
+                <div class="promo_box__image"></div>
+                <input type="button" class="promo_box__button" value="See Our Work">
+                <div class="promo_box__slider-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+
             </div>
         </header>
         <section class="about">
-            <div class="about__item"></div>
-            <div class="about__item"></div>
-            <div class="about__item"></div>
-            <div class="about__item"></div>
+            <div class="about__item">
+                <h2>What I Can All Do</h2>
+                <p>Duis cupidatat ex qui nisi. Duis cupidatat ex qui nisi.</p>
+                <p>Deserunt deserunt ex duis sint do consequat nisi sint enim aliquip sunt esse dolor. Ea sit et dolor sunt
+                    deserunt amet dolore velit eiusmod. Laborum qui magna elit minim id deserunt sint qui officia cupidatat
+                    eu. Labore ullamco consectetur tempor et Lorem aliqua labore officia ex do.</p>
+                <a href="#">Read more</a>
+                <div class="stripes"></div>
+
+            </div>
+            <div class="about__item">
+                <h2>A Little Bit About Me</h2>
+                <p>Duis cupidatat ex qui nisi. Duis cupidatat ex qui nisi.</p>
+                <p>Deserunt deserunt ex duis sint do consequat nisi sint enim aliquip sunt esse dolor. Ea sit et dolor sunt
+                    deserunt amet dolore velit eiusmod. Laborum qui magna elit minim id deserunt sint qui officia cupidatat
+                    eu. Labore ullamco consectetur tempor et Lorem aliqua labore officia ex do.</p>
+                <a href="#">Read more</a>
+                <div class="stripes"></div>
+
+            </div>
+            <div class="about__item">
+                <h2>Follow Me on Twitter</h2>
+                <p>Duis cupidatat ex qui nisi. Duis cupidatat ex qui nisi.</p>
+                <p>Deserunt deserunt ex duis sint do consequat nisi sint enim aliquip sunt esse dolor. Ea sit et dolor sunt
+                    deserunt amet dolore velit eiusmod. Laborum qui magna elit minim id deserunt sint qui officia cupidatat
+                    eu. Labore ullamco consectetur tempor et Lorem aliqua labore officia ex do.</p>
+                <a href="#">Read more</a>
+                <div class="stripes"></div>
+
+            </div>
+            <div class="about__item">
+                <h2>Feel Free To Contact Me</h2>
+                <p>Duis cupidatat ex qui nisi. Duis cupidatat ex qui nisi.</p>
+                <p>Deserunt deserunt ex duis sint do consequat nisi sint enim aliquip sunt esse dolor. Ea sit et dolor sunt
+                    deserunt amet dolore velit eiusmod. Laborum qui magna elit minim id deserunt sint qui officia cupidatat
+                    eu. Labore ullamco consectetur tempor et Lorem aliqua labore officia ex do.</p>
+                <a href="#">Read more</a>
+                <div class="stripes"></div>
+
+            </div>
         </section>
         <section class="work">
             <div class="work__text">
@@ -57,27 +111,27 @@
             </div>
             <div class="work__images">
                 <div class="work__images__img">
-                    <img src="/assets/images/3002368c6558d6fcc1ca47546a0898fe.png">
+                    <img src="${require(`assets/img-recent1.png`)}" alt="Some random image"/>
                 </div>
                 <div class="work__images__img">
-                    <img src="/assets/images/5a4351f68dd4f8e37a1272ba80f0d3bb.png">
+                    <img src="${require(`assets/img-recent2.png`)}" alt="Some random image"/>
                 </div>
                 <div class="work__images__img">
-                    <img src="/assets/images/767b08bc05e3d46069ccfbb25abaa4d5.png">
+                    <img src="${require(`assets/img-recent3.png`)}" alt="Some random image"/>
                 </div>
                 <div class="work__images__img">
-                    <img src="/assets/images/5a4351f68dd4f8e37a1272ba80f0d3bb.png">
+                    <img src="${require(`assets/img-recent2.png`)}" alt="Some random image"/>
                 </div>
                 <div class="work__images__img">
-                    <img src="/assets/images/767b08bc05e3d46069ccfbb25abaa4d5.png">
+                    <img src="${require(`assets/img-recent1.png`)}" alt="Some random image"/>
                 </div>
                 <div class="work__images__img">
-                    <img src="/assets/images/3002368c6558d6fcc1ca47546a0898fe.png">
+                    <img src="${require(`assets/img-recent3.png`)}" alt="Some random image"/>
                 </div>
             </div>
 
         </section>
-        <footer class="footer">
+        <footer class="footer background">
             <div class="footer__infoBox">
                 <div class="footer__infoBox__item"></div>
                 <div class="footer__infoBox__item"></div>
@@ -86,7 +140,7 @@
             </div>
             <div class="footer__copyrights">
                 <div class="footer__copyrights__logo">
-                    <img src="/assets/images/c3a7df7a92753238f30eb1de0c522c08.png">
+                    <img src="${require(`assets/logo.png`)}" alt="logo" />
                 </div>
                 <div class="footer__copyrights__text">
                     <p>Uuuuuu szakalakalkalkal</p>
@@ -107,14 +161,11 @@
     <!--<div class="hello">
         <p>Hello praktyki!</p>
         <p class="smaller">Przykład użycia assetu z index.html:</p>
-        <img src="/assets/images/bc346ad228dd52afd487005ecaf9364a.svg" />
-        <p class="smaller">Przykład użycia assetu z pliku scss:</p>
-        <div class="asset-test">
-            
-        </div>
+        <img src="${require(`assets/logo.svg`)}" />
+        <p class="smaller">Przykład użycia assetu z pliku less:</p>
+        <div class="asset-test"></div>
     </div>-->
 
-<script type="text/javascript" src="/app.bundle.js"></script>
-
 </body>
+
 </html>

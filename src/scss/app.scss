@@ -5,7 +5,8 @@ $stripWidth: 60px;
 $stripGap: 20px;
 
 /**** colors ***/
-$button: #8a8a8a;
+$button: #878787;
+$buttonLight: #bebebe;
 
 /***** screen width ****/
 
@@ -83,7 +84,7 @@ a {
       background: white;
       border-radius: 5px;
       position: absolute;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
 
       &::before, &::after{
           content: "";
@@ -230,7 +231,6 @@ a {
     opacity: 0.2;
     @media(min-width:715px){
       position: static;
-      // width: (4 * $stripWidth) + (4 * $stripGap);
       opacity: 1;
       align-self: flex-end;
       width: 330px;
@@ -256,7 +256,7 @@ a {
       transform: translate(1px, 1px);
     }
   }
-
+/******* slider indicators *********/
   &__slider-indicator{
     display: flex;
     flex-flow: row nowrap;
@@ -266,6 +266,11 @@ a {
       height: 5px;
       background: $button;
       margin: 0 5px;
+
+      &:hover{
+        background: $buttonLight;
+
+      }
     }
   }
 }
@@ -540,13 +545,17 @@ a {
       justify-content: space-between;
     }
 
+    @media(min-width:1200px){
+      justify-content: flex-start;
+    }
+
     &__logo{
       align-self: center;
       opacity: 0.5;
       position: relative;
 
       @media(min-width:715px){
-        padding: 0 10px 0 120px;
+        padding: 0 10px 0 130px;
         &::after{
           content:'';
           width: 1px;
@@ -556,9 +565,6 @@ a {
           right:0;
           top:5px;
         }
-
-
-
       }
     }
 
@@ -572,6 +578,10 @@ a {
       @media(min-width:715px){
         padding-right: 130px;
 
+      }
+
+      @media(min-width:1200px){
+        padding: 0 0 0 20px;
       }
     }
   }

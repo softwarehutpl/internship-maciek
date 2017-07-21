@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --watch --progress --colors --env=dev",
+    "start": "webpack-dev-server --hot --watch --progress --colors --env=dev --host 0.0.0.0 --public 10.254.0.21:8080",
     "build": "webpack -p"
   },
   "author": "",

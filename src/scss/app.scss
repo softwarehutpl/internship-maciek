@@ -360,6 +360,7 @@ a {
     padding: 0 120px;
   }
   
+/****** items *********/
 
   &__items{
     display: flex;
@@ -381,6 +382,7 @@ a {
       }
 
     }
+/*********** items images *****/
     &__image{
       width: 300px;
       height: 274px;
@@ -400,7 +402,7 @@ a {
         opacity: 1;
       }
 
-
+/****** cover elements on hover ********/
       &__cover{
         position: absolute;
         opacity: 0;
@@ -470,58 +472,109 @@ a {
 /******** footer **********/
 
 .footer{
-  padding: 0 120px;
 
+/****** infoboxes ****/
   &__infoBox{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    @media(min-width:715px){
+      padding: 20px 120px 0;
+
+    }
 
     &__item{
       color: white;
-      width: 220px;
+      width: 100%;
+      margin:10px;
+      position: relative;
+      margin: 0 10px;
+
+      @media(min-width:715px){
+        width: 220px;
+        margin: 0;
+      }
+
+      h2{
+        margin: 20px 0 30px;
+         &:after{
+           content: '';
+           display: block;
+           position: absolute;
+           height: 1px;
+           width: 220px;
+           background-color: #817c7c;
+           top: 55px;
+
+         }
+
+      }
+      &__images{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        &__img{
+          width: 46px;
+          height: 46px;
+          margin: 6px 0;
+          border: solid 3px white;
+          background: #cccccc;
+        }
+      }
     }
 
+  }
+/******** copytights and logo ********/
+
+  &__copyrights{
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    @media(min-width:715px){
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    &__logo{
+      align-self: center;
+      opacity: 0.5;
+      position: relative;
+
+      @media(min-width:715px){
+        padding: 0 10px 0 120px;
+        &::after{
+          content:'';
+          width: 1px;
+          height: 20px;
+          background: #5c5c5c;
+          position: absolute;
+          right:0;
+          top:5px;
+        }
+
+
+
+      }
+    }
+
+    &__text{
+      color: white;
+      align-self: center;
+      opacity: 0.5;
+      text-align: center;
+      line-height: 0.5em;
+
+      @media(min-width:715px){
+        padding-right: 130px;
+
+      }
+    }
   }
 
 }
 
-// .footer__infoBox {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-orient: horizontal;
-//   -webkit-box-direction: normal;
-//       -ms-flex-direction: row;
-//           flex-direction: row;
-//   -ms-flex-wrap: wrap;
-//       flex-wrap: wrap;
-//   -ms-flex-pack: distribute;
-//       justify-content: space-around;
-//   padding: 0 120px;
-//   margin-top: 20px;
-// }
-// .footer__infoBox__item {
-//   margin: 10px 0;
-//   display: block;
-//   width: 220px;
-//   height: 250px;
-//   background-color: #4a9cb7;
-// }
-// .footer__copyrights {
-//   background-color: rgba(0, 0, 0, 0.1);
-//   padding: 20px 120px 0;
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-orient: horizontal;
-//   -webkit-box-direction: normal;
-//       -ms-flex-flow: row wrap;
-//           flex-flow: row wrap;
-//   -webkit-box-pack: start;
-//       -ms-flex-pack: start;
-//           justify-content: flex-start;
-// }
-// .footer__copyrights__text {
-//   padding-left: 50px;
-// }

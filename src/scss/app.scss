@@ -192,6 +192,10 @@ a {
           }
     }
 }
+/*******test ********/
+.white{
+  background: white;
+}
 
 /******** promo boxes *********/
 .promo_box{
@@ -221,10 +225,11 @@ a {
   }
 
   &__image{
+    display:none;
     width: (2 * $stripWidth) + (3 * $stripGap);
     height: 150px;
-    background: url('~assets/slider-image.png') no-repeat;
-    background-size: 100% 100%; 
+    // background: url('~assets/slider-image1.png') no-repeat;
+    // background-size: 100% 100%; 
     position: absolute;
     right:10px;
     bottom: 40px;

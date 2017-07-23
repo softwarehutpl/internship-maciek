@@ -192,10 +192,7 @@ a {
           }
     }
 }
-/*******test ********/
-.white{
-  background: white;
-}
+
 
 /******** promo boxes *********/
 .promo_box{
@@ -234,6 +231,7 @@ a {
     right:10px;
     bottom: 40px;
     opacity: 0.2;
+    z-index: 1;
     @media(min-width:715px){
       position: static;
       opacity: 1;
@@ -266,11 +264,12 @@ a {
     display: flex;
     flex-flow: row nowrap;
     align-self: flex-end;
-    span{
+    &__span{
       width: 23px;
       height: 5px;
       background: $button;
       margin: 0 5px;
+      z-index: 100;
 
       &:hover{
         background: $buttonLight;

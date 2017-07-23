@@ -8,11 +8,11 @@ var spans = document.getElementsByClassName('promo_box__slider-indicator__span')
 
 for (x=0; x<spans.length; x++){
     spans[x].addEventListener('click', function(e){
-        if (x = 1){
-            console.log('s');
-        }
-        console.log(x);
-        showDivs(slideIndex = x);
+        console.log('dziala');
+        var attr = this.getAttribute('number');
+        console.log(attr);
+
+        showDivs(slideIndex = attr);
     })
 }
 

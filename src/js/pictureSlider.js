@@ -4,14 +4,50 @@
 // import slider3 from 'assets/slider-image3.png';
 // import slider4 from 'assets/slider-image4.png';
 
+
+// var slider;
+
+// function startSlider(){
+//   slider = setInterval(showDivs, 3000);
+// }
+
+
+var sliderButton = document.getElementById('sliderButton');
+var active = false;
+var slider;
+
+// function startSlider(){
+//   slider = setInterval(showDivs, 3000);
+// }
 var spans = document.getElementsByClassName('promo_box__slider-indicator__span');
+sliderButton.addEventListener('click', function(e){
+    console.log('jestem');
+    if (active){
+        clearInterval(slider);
+        active = false;
+
+        for (var z = 0; z<spans.length; z++){
+        spans[z].style.visibility = 'hidden';
+      };
+    } else {
+        slider = setInterval(showDivs, 3000);
+        active = true;
+                for (var z = 0; z<spans.length; z++){
+        spans[z].style.visibility = 'visible';
+      };
+    }
+})
+
+
+
+
+
+
+// var spans = document.getElementsByClassName('promo_box__slider-indicator__span');
 
 for (x=0; x<spans.length; x++){
     spans[x].addEventListener('click', function(e){
-        console.log('dziala');
         var attr = this.getAttribute('number');
-        console.log(attr);
-
         showDivs(slideIndex = attr);
     })
 }
@@ -26,15 +62,18 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("promo_box__image");
-  var dots = document.getElementsByClassName("promo_box__slider-indicator__span");
+  
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" white", "");
+
+  for (i = 0; i < spans.length; i++) {
+     spans[i].className = spans[i].className.replace(" active", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " white";
+  spans[slideIndex-1].className += " active";
+  slideIndex ++;
+  if (slideIndex>x.length){ slideIndex = 1};
 }

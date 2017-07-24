@@ -1,52 +1,8 @@
 
-// import slider1 from 'assets/slider-image1.png';
-// import slider2 from 'assets/slider-image2.png';
-// import slider3 from 'assets/slider-image3.png';
-// import slider4 from 'assets/slider-image4.png';
-
-
-// var slider;
-
-// function startSlider(){
-//   slider = setInterval(showDivs, 3000);
-// }
-
-
-var sliderButton = document.getElementById('sliderButton');
-var active = false;
-var slider;
-
-// function startSlider(){
-//   slider = setInterval(showDivs, 3000);
-// }
 var spans = document.getElementsByClassName('promo_box__slider-indicator__span');
-sliderButton.addEventListener('click', function(e){
-    console.log('jestem');
-    if (active){
-        clearInterval(slider);
-        active = false;
 
-        for (var z = 0; z<spans.length; z++){
-        spans[z].style.visibility = 'hidden';
-      };
-    } else {
-        slider = setInterval(showDivs, 3000);
-        active = true;
-                for (var z = 0; z<spans.length; z++){
-        spans[z].style.visibility = 'visible';
-      };
-    }
-})
-
-
-
-
-
-
-// var spans = document.getElementsByClassName('promo_box__slider-indicator__span');
-
-for (x=0; x<spans.length; x++){
-    spans[x].addEventListener('click', function(e){
+for (var y=0; y<spans.length; y++){
+    spans[y].addEventListener('click', function(e){
         var attr = this.getAttribute('number');
         showDivs(slideIndex = attr);
     })
@@ -77,3 +33,5 @@ function showDivs(n) {
   slideIndex ++;
   if (slideIndex>x.length){ slideIndex = 1};
 }
+
+export { showDivs };

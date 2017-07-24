@@ -54,8 +54,9 @@ a {
   }
   @media (min-width:1200px){
     flex-flow: row nowrap;
-    padding: 0 120px;
+    
   }
+/********* logo *********/
 
   &__logo{
     align-self: flex-start;
@@ -201,7 +202,7 @@ a {
   flex-flow: column wrap;
   padding: 0 15px 50px 15px;
   @media (min-width:715px){
-    padding: 0 120px 70px;
+    padding: 20px 120px 90px;
   }
   @media (min-width:1200px){
     flex-flow: row wrap;
@@ -222,7 +223,11 @@ a {
     }
     @media(min-width:1200px){
       width: 50%;
-      padding: 0 40px 0 0;
+      // padding: 0 40px 0 0;
+      flex-basis: 40%;
+      order: 0;
+      
+      
     }
     p{
       line-height: 17px;
@@ -230,6 +235,7 @@ a {
     }
 
   }
+/********* promo text images ************/
 
   &__image{
     display:none;
@@ -250,6 +256,11 @@ a {
     @media(min-width:1200px){
       width: 50%;
       height: 350px;
+      flex-basis: 50%;
+      align-self: stretch;
+      margin-right: 80px;
+      // order:2;
+      
     }
   }
 
@@ -266,12 +277,23 @@ a {
     &:active{
       transform: translate(1px, 1px);
     }
+    @media(min-width:1200px){
+      position: absolute;
+      top:250px;
+    }
   }
 /******* slider indicators *********/
   &__slider-indicator{
     display: flex;
     flex-flow: row nowrap;
     align-self: flex-end;
+
+    @media(min-width:1200px){
+      position: absolute;
+      right: 120px;
+      bottom: 65px;
+
+    }
     &__span{
       visibility: hidden;
       width: 23px;
@@ -393,7 +415,7 @@ a {
   }
 
   @media (min-width:715px){
-    padding: 0 120px;
+    padding: 0 120px 50px;
   }
   
 /****** items *********/

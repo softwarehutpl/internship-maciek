@@ -71,7 +71,7 @@ a {
     width: 50px;
     top:10px;
     right:10px;
-    @media (min-width: 768px){
+    @media (min-width: 714px){
       display: none;
     }
 
@@ -201,7 +201,7 @@ a {
   flex-flow: column wrap;
   padding: 0 15px 50px 15px;
   @media (min-width:715px){
-    padding: 0 120px 100px;
+    padding: 0 120px 70px;
   }
   @media (min-width:1200px){
     flex-flow: row wrap;
@@ -209,16 +209,26 @@ a {
   }
 
 
-  &__text{
+    &__text{
     color: white;
+    display: flex;
     width: 100%;
+    text-align: left;
+    word-spacing: 7px;
+    flex-flow: column wrap;
     @media(min-width:715px){
       width: 80%;
+      padding-right: 30px; 
     }
     @media(min-width:1200px){
       width: 50%;
       padding: 0 40px 0 0;
     }
+    p{
+      line-height: 17px;
+      word-spacing: 1.4px;
+    }
+
   }
 
   &__image{
@@ -271,9 +281,6 @@ a {
       z-index: 100;
 
 
-
-
-
       &:hover{
         background-color:$buttonLight;
 
@@ -287,7 +294,7 @@ a {
 
 /********** about section *********/
 .stripes{
-  width:70%;
+  width:75%;
   height:5px;
   margin: 20px 0 30px 0;
   background: repeating-linear-gradient(-45deg, transparent, transparent 1px, #fff 1px, #c9c9c9 3px);
@@ -313,11 +320,26 @@ a {
     box-shadow: 0px 3px 5px 1px #c3c3c3;
     @media(min-width:715px){
       width: 220px / 460px * 100%;
-      margin: 5px;
+      margin: 15px 0;
           }
     @media(min-width:1200px){
       width: 220px / 940px *100%;
       padding: 20px;
+    }
+        h3{
+      padding-bottom: 10px;
+      word-spacing: 3px;
+      margin: 10px 0 0 3px;
+    }
+    p{
+      padding-top: 12px;
+      margin: 0;
+      line-height: 15px;
+      word-spacing: 1px;
+
+      &:first-of-type{
+        color: $buttonLight;
+      }
     }
 
     p:last-of-type{
@@ -388,6 +410,11 @@ a {
     &__text{
       width: 300px;
       padding: 0 0 28px;
+      p{
+       &:first-of-type{
+        color: $buttonLight;
+      }
+      }
 
       @media(min-width:715px){
         width: 220px;

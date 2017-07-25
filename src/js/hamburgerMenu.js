@@ -1,5 +1,10 @@
-/********* activating the hamburger menu **************/
-console.info('abc');
+/********* Function activating the hamburger menu ****
+ * using two different methods
+ * 1. adding a new class to the nav button which is
+ * styled in css files.
+ * 2. changing the display style of the searchbar.
+ * 
+ * */
 var navButton = document.querySelector('.main-hdr__hamburger-menu');
 var searchBar = document.querySelector('.main-hdr__form');
 navButton.addEventListener('click', function(e){

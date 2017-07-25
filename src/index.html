@@ -11,12 +11,14 @@
 <body>
     <div class="main-container">
         <header class="background">
-            <!--menu-->
+            <!--Main menu, logo, navigation and search bar-->
             <div class="main-hdr">
                 <div class="main-hdr__logo">
                     <img src="${require(`assets/logo.png`)}" alt="logo" />
                 </div>
+                <!--Hamburger menu icon that appears on mobile devices -->
                 <div class="main-hdr__hamburger-menu"><span></span></div>
+                <!--main navigation-->
                 <nav class="main-hdr__nav">
                     <ul>
                         <li class="main-hdr__nav__item">
@@ -40,11 +42,12 @@
 
                     </ul>
                 </nav>
+                <!--search bar-->
                 <form class="main-hdr__form">
                     <input type="text" placeholder="" name="search" />
                 </form>
             </div>
-            <!-- promo boxes -->
+            <!-- promo boxes contains the information in the header and pictures-->
             <div class="promo_box">
                 <div class="promo_box__text">
                     <h1> Portfolio Website Theme: Perfect for Anyone</h1>
@@ -54,8 +57,9 @@
                         Maecenas mattis.</p>
 
                 </div>
-                <!-- promo boxes images -->
-                
+                <!-- promo boxes images and added picture slider that activates afetr 
+                clicking the button-->
+
                 <img class="promo_box__image" src="${require('assets/slider-image1.png')}" />
                 <img class="promo_box__image" src="${require('assets/slider-image2.png')}" />
                 <img class="promo_box__image" src="${require('assets/slider-image3.png')}" />
@@ -70,6 +74,7 @@
 
             </div>
         </header>
+        <!-- Section containing the about information -->
         <section class="about">
             <div class="about__item">
                 <h3>What I Can All Do</h3>
@@ -112,6 +117,9 @@
 
             </div>
         </section>
+        <!--Section containing the works with the separate header
+         and list of items: description and images. It also contains a slider that changes the pictures
+         still in construction-->
         <section class="work">
             <header class="work__header">
                 <h2>Recent Work</h2>
@@ -173,6 +181,8 @@
 
                     </div>
                 </div>
+                <!--Empty div that fills the spot under the description so that the images
+                 stay put on the right side-->
                 <div class="work__items__empty"></div>
                 <div class="work__items__image">
                     <img src="${require(`assets/img-recent2.png`)}" alt="Some random image" />
@@ -217,10 +227,8 @@
                     </div>
                 </div>
             </div>
-
-
-
         </section>
+        <!--footer containing some information, a twitter widget and a Flickr widget-->
         <footer class="footer background">
             <div class="footer__infoBox">
                 <div class="footer__infoBox__item">
@@ -267,26 +275,8 @@
                     <p>t: (888) 842-8356 e: info@bestpsdfreebies.com</p>
                 </div>
             </div>
-
         </footer>
-
-
     </div>
-
-
-
-
-
-
-
-    <!--<div class="hello">
-        <p>Hello praktyki!</p>
-        <p class="smaller">Przykład użycia assetu z index.html:</p>
-        <img src="${require(`assets/logo.svg`)}" />
-        <p class="smaller">Przykład użycia assetu z pliku less:</p>
-        <div class="asset-test"></div>
-    </div>-->
-
 </body>
 
 </html>

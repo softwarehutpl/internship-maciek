@@ -6,3 +6,4 @@ import './js/pictureSlider.js';
 import './js/sliderStarter.js';
 
 import './scss/app.scss';
+

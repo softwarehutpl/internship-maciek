@@ -1,4 +1,10 @@
 
+/* function changing the pictures in the slider */ 
+
+
+/** This part takes the number atrribute of the span element which is the slider indicator
+ * and uses the number in the showDivs function to change the selected picture
+ */
 var spans = document.getElementsByClassName('promo_box__slider-indicator__span');
 
 for (var y=0; y<spans.length; y++){
@@ -7,14 +13,18 @@ for (var y=0; y<spans.length; y++){
         showDivs(slideIndex = attr);
     })
 }
+/** Setting the slider in picture 1 position */
 
 var slideIndex = 1;
 showDivs(slideIndex = 1);
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-};
-
+/**
+ * Function changing the pictures in the slider
+ * the function selects a picture afrom an array and changes it's display 
+ * (fron none to block) depending on the slideIndex. 
+ * It also highlights the coresponding slider indicator.
+ * 
+ */
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("promo_box__image");
